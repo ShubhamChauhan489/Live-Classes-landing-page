@@ -36,167 +36,112 @@
     class="selection:bg-primary-500 selection:text-white w-full lg:w-5/6 mx-auto"
   >
     <!-- header -->
-    <header class="p-4">
-      <nav class="flex justify-between">
-        <a href="#">
-          <img src="./public/images/logo.svg" alt="" />
-
-          <ul
-            class="hidden sm:flex px-8 gap-6 text-gray-600 justify-center items-center bg-gray-200 rounded-full hover:[&>li]:text-primary-400 text-sm font-[500] [&>li]:transition-all [&>li]:duration-150 [&>li]:ease-in-out"
-          >
-            <li><a href="#">Intro</a></li>
-            <li><a href="">Pricing</a></li>
-            <li><a href="">Features</a></li>
-            <li><a href="">Testimonials</a></li>
-          </ul>
-
-          <button
-            class="bg-primary-950 text-white rounded-full px-4 capitalize font-[500] text-sm hover:bg-primary-500 transition-all duration-150 ease-in-out"
-          >
-            join community
-          </button>
+    <nav class="flex justify-between mt-4 px-8">
+      <div>
+        <a href="/" >
+          <img src="./public/images/logo.svg" alt="logo" class="mt-4">
         </a>
-      </nav>
-    </header>
-
-    <!-- hero secition -->
-    <section
-      class="grid grid-cols-1 lg:grid-cols-2 mt-16 gap-10 text-center px-4"
-    >
-      <div class="flex flex-col items-center justify-center lg:items-start">
-        <h1
-          class="w-full text-6xl md:text-6xl lg:text-9xl lg:text-left uppercase font-mono tracking-tighter leading-[85%] font-bold"
-        >
-          <span class="text-primary-500">Attend live </span><br />classesevery
-          week
-        </h1>
-        <p
-          class="mt-6 text-center md:text-2xl md:w-[60%] lg:w-full lg:text-left text-lg hover:underline underline-offset-2 text-gray-500"
-        >
-          Join founders, freelancers, designers, FAANG engineers, indie hackers,
-          and more in our 24/7 WhatsApp Group for less than a cup of coffee.
-        </p>
-        <button
-          class="mt-8 px-5 py-4 rounded-full bg-primary-500 hover:bg-primary-600 transition-all duration-150 ease-in text-white font-bold"
-        >
-          Join 24/7 Whatsapp + discord for $5/month
-        </button>
       </div>
-      <div class="w-full flex items-center justify-center lg:justify-end">
-        <img
-          src="https://github.com/singh1aryan/nextjs-prisma-sql/assets/31454667/9009ac7b-b0fb-4083-9f22-193e56c10f1c"
-          alt="hero-banner"
-          class="lg:w-[50vh]"
-        />
+      <div class="hidden md:flex">
+        <ul class=" mt-4 flex items-center gap-8 cursor-pointer bg-gray-300 py-2 px-2 rounded-full text-gray-600 hover:[&>li]:text-primary-500">
+          <li>Intro</li>
+          <li>Pricing</li>
+          <li>Features</li>
+          <li>Testimonials</li>
+        </ul>
+      </div>
+      <div>
+        <button class="mt-4 h-10 bg-primary-950 text-white rounded-full px-4 font-[500] hover:bg-primary-500">Join Community</button>
+      </div>
+    </nav>
+    
+    <!-- hero secition -->
+    <section class=" grid grid-cols-1 mt-14 gap-10 text-center px-4 md:grid-cols-2">
+      <!-- left -->
+      <div class="flex flex-col item-center justify-center md:items-start">
+      <h1 class="w-full lg:text-9xl font-bold font-sans uppercase leading-[95%] md:text-left text-6xl  ">Attend live<br/>
+        <spam class="text-primary-500">classes every week</spam></h1>
+        <p class="mt-6 text-center text-gray-500 hover:underline md:text-left md:text-xl">Join founders, freelancers, designers, FAANG engineers, indie hackers, and more in our 24/7 WhatsApp Group for less than a cup of coffee.</p>
+        <div>
+        <button class="mt-6  bg-primary-500 py-4 px-4 rounded-full text-white font-bold hover:bg-primary-600">join 24/7 WhatsApp + discord for $5/month</button>
+      </div>
+      </div>
+      <!-- right -->
+      <div class="w-full flex item-center justify-center">
+        <img src="https://github.com/singh1aryan/nextjs-prisma-sql/assets/31454667/9009ac7b-b0fb-4083-9f22-193e56c10f1c" alt="image" class="md:w-[45wh]">
       </div>
     </section>
-
     <!-- services section -->
     <section
-      class="mt-24 px-4 flex flex-col sm:flex-row sm:flex-wrap gap-8 justify-center items-center flex-wrap [&>div]:flex [&>div]:gap-5 [&>div]:items-center"
-    >
-      <div>
-        <img src="./public/images/icon-guides.svg" alt="guide svg" />
-        <p class="font-semibold text-gray-700">5+ guides for Free</p>
-      </div>
-      <div>
-        <img src="./public/images/icon-courses.svg" alt="courses svg" />
-        <p class="font-semibold text-gray-700">Exclusive Courses & Projects</p>
-      </div>
-      <div>
-        <img src="./public/images/icon-whatsapp.svg" alt="Whatsapp svg" />
-        <p class="font-semibold text-gray-700">24/7 WhatsApp Support Group</p>
-      </div>
-      <div>
-        <img src="./public/images/icon-sessions.svg" alt="session svg" />
-        <p class="font-semibold text-gray-700">1:1 Free Session</p>
-      </div>
-    </section>
-
+    class="mt-24 px-4 flex flex-col sm:flex-row sm:flex-wrap gap-8 justify-center items-center flex-wrap [&>div]:flex [&>div]:gap-5 [&>div]:items-center"
+  >
+    <div>
+      <img src="./public/images/icon-guides.svg" alt="guide svg" />
+      <p class="font-semibold text-gray-700">5+ guides for Free</p>
+    </div>
+    <div>
+      <img src="./public/images/icon-courses.svg" alt="courses svg" />
+      <p class="font-semibold text-gray-700">Exclusive Courses & Projects</p>
+    </div>
+    <div>
+      <img src="./public/images/icon-whatsapp.svg" alt="Whatsapp svg" />
+      <p class="font-semibold text-gray-700">24/7 WhatsApp Support Group</p>
+    </div>
+    <div>
+      <img src="./public/images/icon-sessions.svg" alt="session svg" />
+      <p class="font-semibold text-gray-700">1:1 Free Session</p>
+    </div>
+  </section>
+    
     <!-- testimonials -->
-
-    <section
-      class="mt-24 px-8 grid grid-cols-1 mx-auto lg:w-5/6 lg:grid-cols-3 gap-16"
-    >
-      <div class="flex flex-col items-center text-center">
-        <div
-          class="w-24 rounded-full group overflow-hidden hover:scale-75 transition-transform duration-200 ease-in-out"
-        >
-          <img
-            src="./public/images/avatars/avatar-aryan.webp"
-            alt="profile-pics"
-            class="group-hover:scale-150 transition-all ease-in-out duration-200"
-          />
-        </div>
-        <p class="mt-4 text-gray-700">
-          "This community has been a game-changer for my career. The exclusive
-          courses and personalized guidance from expert mentors have helped me
-          take my coding skills to the next level."
-        </p>
-        <h6 class="mt-4 font-bold">Aryan Singh</h6>
-        <p>SWE at Google</p>
-
-        <div class="flex gap-1 mt-2">
-          <img src="./public/images/icon-star.svg" alt="rating star" />
-          <img src="./public/images/icon-star.svg" alt="rating star" />
-          <img src="./public/images/icon-star.svg" alt="rating star" />
-          <img src="./public/images/icon-star.svg" alt="rating star" />
-          <img src="./public/images/icon-star.svg" alt="rating star" />
-        </div>
-      </div>
-      <div class="flex flex-col items-center text-center">
-        <div
-          class="w-24 rounded-full group overflow-hidden hover:scale-75 transition-transform duration-200 ease-in-out"
-        >
-          <img
-            src="./public/images/avatars/avatar-kevin.webp"
-            alt="profile-pics"
-            class="group-hover:scale-150 transition-all ease-in-out duration-200"
-          />
-        </div>
-        <p class="mt-4 text-gray-700">
-          "This community has been a game-changer for my career. The exclusive
-          courses and personalized guidance from expert mentors have helped me
-          take my coding skills to the next level."
-        </p>
-        <h6 class="mt-4 font-bold">Aryan Singh</h6>
-        <p>SWE at Google</p>
-
-        <div class="flex gap-1 mt-2">
-          <img src="./public/images/icon-star.svg" alt="rating star" />
-          <img src="./public/images/icon-star.svg" alt="rating star" />
-          <img src="./public/images/icon-star.svg" alt="rating star" />
-          <img src="./public/images/icon-star.svg" alt="rating star" />
-          <img src="./public/images/icon-star.svg" alt="rating star" />
-        </div>
-      </div>
-      <div class="flex flex-col items-center text-center">
-        <div
-          class="w-24 rounded-full group overflow-hidden hover:scale-75 transition-transform duration-200 ease-in-out"
-        >
-          <img
-            src="./public/images/avatars/avatar-umang.webp"
-            alt="profile-pics"
-            class="group-hover:scale-150 transition-all ease-in-out duration-200"
-          />
-        </div>
-        <p class="mt-4 text-gray-700">
-          "This community has been a game-changer for my career. The exclusive
-          courses and personalized guidance from expert mentors have helped me
-          take my coding skills to the next level."
-        </p>
-        <h6 class="mt-4 font-bold">Aryan Singh</h6>
-        <p>SWE at Google</p>
-
-        <div class="flex gap-1 mt-2">
-          <img src="./public/images/icon-star.svg" alt="rating star" />
-          <img src="./public/images/icon-star.svg" alt="rating star" />
-          <img src="./public/images/icon-star.svg" alt="rating star" />
-          <img src="./public/images/icon-star.svg" alt="rating star" />
-          <img src="./public/images/icon-star.svg" alt="rating star" />
-        </div>
-      </div>
+    <section class=" mt-24 px-8 grid grid-cols-1 mx-auto gap-16 lg:grid-cols-3 lg:w-5/6">
+     
+        <div class=" flex flex-col items-center text-center rounded-full ">
+          <img src="./public/images/avatars/avatar-aryan.webp"
+          alt="profile-pics" class="w-24 mt-22">
+          <p>"This community has been a game-changer for my career. The exclusive courses and personalized guidance from expert mentors have helped me take my coding skills to the next level."</p>
+          <h5>Aryan Singh</h5>
+            <p>SWE at Google</p>
+            <div class="flex gap-1 mt-2">
+              <img src="./public/images/icon-star.svg" alt="rating star" />
+              <img src="./public/images/icon-star.svg" alt="rating star" />
+              <img src="./public/images/icon-star.svg" alt="rating star" />
+              <img src="./public/images/icon-star.svg" alt="rating star" />
+              <img src="./public/images/icon-star.svg" alt="rating star" />
+            </div>
+            </div>
+     
+      <div class=" flex flex-col items-center text-center rounded-full ">
+        <img src="./public/images/avatars/avatar-kevin.webp"
+        alt="profile-pics" class="w-24 mt-22 rounded-full">
+        <p>"This community has been a game-changer for my career. The exclusive courses and personalized guidance from expert mentors have helped me take my coding skills to the next level."</p>
+        <h5>Aryan Singh</h5>
+          <p>SWE at Google</p>
+          <div class="flex gap-1 mt-2">
+            <img src="./public/images/icon-star.svg" alt="rating star" />
+            <img src="./public/images/icon-star.svg" alt="rating star" />
+            <img src="./public/images/icon-star.svg" alt="rating star" />
+            <img src="./public/images/icon-star.svg" alt="rating star" />
+            <img src="./public/images/icon-star.svg" alt="rating star" />
+          </div>
+          </div>
+          <div class=" flex flex-col items-center text-center rounded-full ">
+            <img src="./public/images/avatars/avatar-umang.webp"
+            alt="profile-pics" class="w-24 mt-22 rounded-full">
+            <p>"This community has been a game-changer for my career. The exclusive courses and personalized guidance from expert mentors have helped me take my coding skills to the next level."</p>
+            <h5>Aryan Singh</h5>
+              <p>SWE at Google</p>
+              <div class="flex gap-1 mt-2">
+                <img src="./public/images/icon-star.svg" alt="rating star" />
+                <img src="./public/images/icon-star.svg" alt="rating star" />
+                <img src="./public/images/icon-star.svg" alt="rating star" />
+                <img src="./public/images/icon-star.svg" alt="rating star" />
+                <img src="./public/images/icon-star.svg" alt="rating star" />
+              </div>
+              </div>
     </section>
+
+
     <!-- pricing section -->
 
     <!-- features section -->
